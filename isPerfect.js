@@ -8,10 +8,7 @@ function isPerfect(n) {
       summ += devisor;
     }
   }
-  if (summ == n) {
-    return true;
-  }
-  return false;
+  return summ == n;
 }
 
 console.log(isPerfect(8128)); // true

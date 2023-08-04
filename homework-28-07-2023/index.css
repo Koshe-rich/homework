@@ -1,0 +1,178 @@
+.body_main {
+  display: flex;
+  /* justify-content: center; */
+  padding: 2em;
+}
+
+.body_calculator {
+  display: flex;
+  padding: 2em;
+  justify-content: center;
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  padding: 0.25em;
+}
+
+.dropdown-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  display: none;
+}
+
+.dropbtn {
+  width: 100%;
+  border: none;
+  font-size: 16px;
+  padding: 12px 16px;
+  background-color: greenyellow;
+  color: black;
+  border-radius: 6px 6px 0 0;
+}
+
+.dropbtn:hover {
+  cursor: pointer;
+}
+
+.dropdown-item {
+  color: black;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  padding: 12px 16px;
+  background-color: greenyellow;
+}
+
+.dropdown-item:hover {
+  background-color: rgb(142, 236, 0);
+}
+
+.dropdown-item:last-of-type {
+  border-radius: 0 0 6px 6px;
+}
+
+.dropdown-content_display_block {
+  display: block;
+}
+
+.calc {
+  display: grid;
+  gap: 2px;
+  padding: 0.75em;
+  border: solid rgb(177, 177, 177) 1px;
+  border-radius: 4px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: 
+  "input input input result"
+  "subtract add division multiplication"
+  "equal equal equal equal"
+  ;
+  min-width: 20%;
+  max-width: 800px;
+}
+
+.calc__input {
+  grid-area: input;
+  background-color: #ffcccc;
+  border: none;
+  border-radius: 0.25em;
+  padding: 0.5em;
+}
+
+.calc__result {
+  grid-area: result;
+  border-radius: 0.25em;
+  background-color: #ffcccc;
+  border: none;
+}
+
+#subtract {
+  grid-area: subtract;
+}
+
+#add {
+  grid-area: add;
+}
+
+#division {
+  grid-area: division;
+}
+
+#multiplication {
+  grid-area: multiplication;
+}
+
+#equal {
+  grid-area: equal;
+}
+
+.calc__action {
+  border: none;
+  border-radius: 0.25em;
+}
+
+/* --------------------- Художественный фильм - Сп*здили ----------------------- */
+
+/* *, *::before, *::after {
+  box-sizing: border-box;
+  font-family: Gotham Rounded, sans-serif;
+  font-weight: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #CBCE91FF, #EA738DFF);
+}
+
+.calculator-grid {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+.calculator-grid>button {
+  cursor: pointer;
+  font-size: 2rem;
+  border: 1px, solid #FFFFFF;
+  outline: none;
+}
+
+.calculator-grid>button:hover {
+  background-color: #a9a9a9;
+}
+
+.span-two {
+  grid-column: span 2;
+  color: #adf802;
+  background-color: rgba(139, 0, 139, 0.8);
+}
+
+.output {
+  grid-column: 1 / -1;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.output .previous-operand {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.5rem;
+}
+
+.output .current-operand {
+  color: white;
+  font-size: 2.5rem;
+} */
